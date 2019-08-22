@@ -24,7 +24,7 @@ public class HomeController {
 
     @GetMapping("/add")
     public String todoForm(Model model){
-        model.addAttribute("todo", todoRepository.findAll());
+        model.addAttribute("todo", new Todo());
         return "todoform";
     }
 
